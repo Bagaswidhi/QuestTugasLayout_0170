@@ -1,5 +1,6 @@
 package com.gas.pam_p4_tugas
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,6 +10,7 @@ import androidx.compose.material3.Card
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -25,7 +27,10 @@ fun ScheduleCard(
             modifier = Modifier.padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-
+            Image(
+                painter = painterResource(id = R.drawable.ic_launcher_background),
+                contentDescription = null
+            )
         }
     }
 }
