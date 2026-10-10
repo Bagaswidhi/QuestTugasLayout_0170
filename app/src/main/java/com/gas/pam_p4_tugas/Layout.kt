@@ -46,7 +46,7 @@ fun ScheduleCard(
             Image(
                 painter = leftIcon,
                 contentDescription = null,
-                modifier = Modifier.size(60.dp).padding(end = 10.dp)
+                modifier = Modifier.size(80.dp).padding(end = 10.dp)
             )
             Column(modifier = Modifier.weight(1f)) {
                 Text(text = title)
@@ -86,6 +86,14 @@ fun Layout(){
             lecture = stringResource(R.string.dosen1),
             backgroundColor = colorResource(R.color.biru),
             leftIcon = painterResource(R.drawable.manpro)
+        )
+        Spacer(modifier = Modifier.height(20.dp))
+        ScheduleCard(
+            title = stringResource(R.string.matkul2),
+            timelocation = stringResource(R.string.waktu2),
+            lecture = stringResource(R.string.dosen2),
+            backgroundColor = colorResource(R.color.biru_langit),
+            leftIcon = painterResource(R.drawable.technopreneurship)
         )
     }
 }
