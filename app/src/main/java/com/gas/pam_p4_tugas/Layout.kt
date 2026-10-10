@@ -38,6 +38,10 @@ fun ScheduleCard(
                 Text(text = timelocation)
                 Text(text = lecture)
             }
+            Image(
+                painterResource(id = R.drawable.ic_launcher_foreground),
+                contentDescription = null
+            )
         }
     }
 }
