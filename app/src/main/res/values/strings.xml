@@ -2,4 +2,6 @@
     <string name="app_name">PAM_P4_Tugas</string>
     <string name="judul">Jadwal Kuliah</string>
     <string name="semesterditempuh">Semester 5</string>
+
+    <string name="matkul1">Manajemen Proyek</string>
 </resources>
