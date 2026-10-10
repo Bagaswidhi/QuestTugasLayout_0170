@@ -103,5 +103,13 @@ fun Layout(){
             backgroundColor = colorResource(R.color.oranye),
             leftIcon = painterResource(R.drawable.database)
         )
+        Spacer(modifier = Modifier.height(20.dp))
+        ScheduleCard(
+            title = stringResource(R.string.matkul4),
+            timelocation = stringResource(R.string.waktu4),
+            lecture = stringResource(R.string.dosen4),
+            backgroundColor = colorResource(R.color.oranye_cerah),
+            leftIcon = painterResource(R.drawable.pws)
+        )
     }
 }
