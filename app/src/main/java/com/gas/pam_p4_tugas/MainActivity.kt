@@ -20,10 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             PAM_P4_TugasTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Layout()
                 }
             }
         }
