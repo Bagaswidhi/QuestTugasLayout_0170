@@ -11,4 +11,6 @@
     <color name="biru_langit">#82C8E5</color>
     <color name="oranye">#FF5F15</color>
     <color name="oranye_cerah">#FF991C</color>
+    <color name="dosen_text">#36454F</color>
+    <color name="waktu_text">#343434</color>
 </resources>
