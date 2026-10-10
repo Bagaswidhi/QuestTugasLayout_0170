@@ -1,5 +1,6 @@
 package com.gas.pam_p4_tugas
 
+import android.R.attr.end
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.Column
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -35,8 +37,9 @@ fun ScheduleCard(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                painter = painterResource(id = R.drawable.ic_launcher_background),
-                contentDescription = null
+                painter = painterResource(id = R.drawable.manpro),
+                contentDescription = null,
+                modifier = Modifier.size(60.dp).padding(end = 10.dp)
             )
             Column(modifier = Modifier.weight(1f)) {
                 Text(text = title)
@@ -44,8 +47,9 @@ fun ScheduleCard(
                 Text(text = lecture)
             }
             Image(
-                painterResource(id = R.drawable.ic_launcher_foreground),
-                contentDescription = null
+                painterResource(id = R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(40.dp)
             )
         }
     }
