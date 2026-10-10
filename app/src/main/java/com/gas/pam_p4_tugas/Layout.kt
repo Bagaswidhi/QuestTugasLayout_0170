@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -31,6 +32,7 @@ fun ScheduleCard(
     timelocation: String,
     lecture: String,
     backgroundColor: Color,
+    leftIcon : Painter,
     modifier: Modifier = Modifier
 ){
     Card(
@@ -42,7 +44,7 @@ fun ScheduleCard(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                painter = painterResource(id = R.drawable.manpro),
+                painter = leftIcon,
                 contentDescription = null,
                 modifier = Modifier.size(60.dp).padding(end = 10.dp)
             )
@@ -82,7 +84,8 @@ fun Layout(){
             title = stringResource(R.string.matkul1),
             timelocation = stringResource(R.string.waktu1),
             lecture = stringResource(R.string.dosen1),
-            backgroundColor = colorResource(R.color.biru)
+            backgroundColor = colorResource(R.color.biru),
+            leftIcon = painterResource(R.drawable.manpro)
         )
     }
 }
